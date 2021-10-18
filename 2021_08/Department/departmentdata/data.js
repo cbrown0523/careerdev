@@ -126,27 +126,32 @@ function dataParse(data){
        // console.log(salInfoAboveSixty)
 //let employeeData = function(){
  //get employee name
-   for(let i = 0; i < salaries.length ; i++){
-    if(salaries[i][1] > 60000){
-       salary = salaries[i][1];
-        for( let j = 0 ; j < employees.length ; j++){
-            if (employees[j][0]  == salaries[i][0]){
-                 employeeName = employees[j][2] + " " + employees[j][3]     
-              for(let k = 0 ; k < employeeDepartments.length ; k++){
-                if(employeeDepartments[k][0] == salaries[i][0]){
-                deptNum = employeeDepartments[k][1] 
-   }}
-}
+for (let i = 0; i < salaries.length; i++) {
+  if (salaries[i][1] > 60000) {
+    let empSal = salaries[i][1] 
+   
+    for (let j = 0; j < employees.length; j++) {
+      if (employees[j][0] == salaries[i][0]) {
+        //console.log(salary)
+        employeeName = employees[j][2] + " " + employees[j][3]
+        for (let k = 0; k < employeeDepartments.length; k++) {
+          if (employeeDepartments[k][0] == salaries[i][0]) {
+            deptNum = employeeDepartments[k][1]
+          }
+        }
+      }
     }
     //which statement is inner vs. outer. intention to console data without duplicates
-   console.log(`Employee ${employeeName} in ${deptNum}  makes ${salary} dollars per year`)
+   salary += `Employee ${employeeName} in ${deptNum}  makes ${empSal } dollars per year \n `;
+   //console.log(`Employee ${employeeName} in ${deptNum}  makes ${salary} dollars per year`)
+ 
   }
- 
- 
- }
+  //console.log(salary)
+
+}
 //}
 //employeeData()
- console.log(employeeName)
+console.log(salary)
 
 // how use variable anywhere in code ie print out names from for loop 
 

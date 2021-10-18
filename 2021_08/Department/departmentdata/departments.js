@@ -1,4 +1,4 @@
-let department = [
+export let department = [
     ["d001","Marketing"],
 ["d002","Finance"],
 ["d003","Human Resources"],
@@ -9,3 +9,5 @@ let department = [
 ["d008","Research"],
 ["d009","Customer Service"]
 ]
+
+
