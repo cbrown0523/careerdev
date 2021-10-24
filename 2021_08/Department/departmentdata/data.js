@@ -372,4 +372,76 @@ console.log(`\n log the names of all former employees and their last date of wor
      }
     }
 */
+//Log all employee names, who have switched departments
+
+//Log all employee names, who have switched departments
+console.log(` \n Log all employee names, who have switched departments \n`)
+for (let i = 0; i < employeeDepartments.length - 1; i++) {
+  for (let j = 0; j < employees.length; j++) {
+    if(employeeDepartments[i][0] == employees[j][0]){
+      let empName = `${employees[j][2]} ${employees[j][3]}`
+      //console.log(empName)
+      if (employeeDepartments[i][0] == employeeDepartments[i + 1][0] && employeeDepartments[i][1] !== employeeDepartments[i + 1][1]) {
+        console.log(empName)
+      
+      }
+    }
+  }
+}
+
+//challenge 4 using one for looop
+for (let i = 0; i < employeeDepartments.length; i++) {
+  const empDep = employeeDepartments[i];
+  const nextEmpDep = employeeDepartments[i + 1];
+  if (nextEmpDep !== undefined && empDep[0] == nextEmpDep[0]) {
+    const employeeIndex = empDep[0]-10001  
+    //console.log(employeeIndex)
+    const empName = `${employees[employeeIndex][2]} ${employees[employeeIndex][3]}`
+    console.log(empName)
+  }
+
+  
+}
+// Log all employee names, who have received raises
+console.log(`\n Log all employee names, who have received raises \n`)
+//grab all employees by id
+// check salary to find the greastest if more then one mathches for same employee id 
+//match employee id from salary and compare to employees
+//retreive the name 
+
+ const employeeSalaries = {}
+for(let i = 0 ; i < salaries.length ; i++){
+
+ let salData = salaries[i]
+ //i dont understand how subtract one gets an two digit num
+ // find the index of each id and slice to get index
+ let empIndex = salData[0].slice(1) - 1; 
+ // use the index to find the match in employees ie employee[4]/ employee[empIndex]
+ const empName = employees[empIndex][2] + " " + employees[empIndex][3];
+ //assigning an array within an object
+if(employeeSalaries[empName] == undefined){
+  employeeSalaries[empName] = []
+}
+
+ employeeSalaries[empName].push(parseInt(salData[1]))
+ //for(let i = 0 ; i < employeeSalaries[empName].length ; i++){
+ 
+ //}
+  //console.log(employeeSalaries[empName][0][salData] )
+  
+  //console.log(employeeSalaries[empName])
+
+}
+for(names in employeeSalaries ){
+  let arrRaise = employeeSalaries[names]
+  //console.log(arrRaise)
+  console.log("Employee" + " " + names + " " + "received a raise" + " " + "to" + " " + "$" + Math.max(...arrRaise))
+   
+  }
+//let abc = bc.sort((a,b)=>{a-b})
+
+ 
+
+
+
 
