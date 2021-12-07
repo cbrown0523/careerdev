@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-07T07:11:43.734Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="OzFZY8ey5EJIp3qjKXTl" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-07T07:12:38.510Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="LmajUBtPz4aFIHJ4BEJm" version="15.9.1" type="github">
   <diagram id="-sZSWxJ__xWEpGspqCVN" name="Page-1">
     <mxGraphModel dx="2059" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="-130" y="40" width="350" height="70" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-100" y="960" width="760" height="310" as="geometry" />
+          <mxGeometry x="30" y="700" width="760" height="310" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="40" y="140" width="760" height="450" as="geometry" />
@@ -17,25 +17,25 @@
           <mxGeometry x="410" y="100" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-8" value="Response" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="410" y="670" width="60" height="30" as="geometry" />
+          <mxGeometry x="440" y="650" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-9" value="endpoint&amp;nbsp;&lt;br&gt;the url you request for&lt;br&gt;ie. http://google.com/animals" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="60" y="160" width="160" height="60" as="geometry" />
+          <mxGeometry x="90" y="160" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-10" value="method&lt;br&gt;the type of request sent to the server some examples are &lt;br&gt;GET - when using, the server looks for the data requested and returns it back.&lt;br&gt;&amp;nbsp; POST - used to create a new resource on a server&lt;br&gt;PUT DELETE. These meyhods are used to perform CRUD actions" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="70" y="230" width="250" height="130" as="geometry" />
+          <mxGeometry x="50" y="310" width="250" height="130" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="gBYgSRhji1xfhsjP2JcL-10" target="gBYgSRhji1xfhsjP2JcL-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-14" value="Headers&lt;br&gt;are used to provide info to both the client and server. can be used for many purposes such as authentication and provideing information about the body content. ie: http headers &quot;Content-Type: application/json" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="350" y="170" width="200" height="130" as="geometry" />
+          <mxGeometry x="440" y="150" width="200" height="130" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-15" value="the data/body&lt;br&gt;the data that you want to send to the server. can only be used with POST PUT PATCH or DELETE" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="570" y="180" width="210" height="110" as="geometry" />
+          <mxGeometry x="410" y="340" width="210" height="110" as="geometry" />
         </mxCell>
         <mxCell id="gBYgSRhji1xfhsjP2JcL-16" value="Erroer message/ response code&lt;br&gt;200+ the request is succesful&lt;br&gt;300+ request redirected to another url&lt;br&gt;400+ an error that originates from the client has occurred&lt;br&gt;500+ an error that originates from server has occured" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="300" y="1020" width="210" height="190" as="geometry" />
+          <mxGeometry x="330" y="760" width="210" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
